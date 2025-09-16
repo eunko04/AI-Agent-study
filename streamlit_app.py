@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 openai_api_key = st.secrets.get("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=openai_api_key)
 
 with st.sidebar:
     openai_api_key = os.getenv('OPENAI_API_KEY')
